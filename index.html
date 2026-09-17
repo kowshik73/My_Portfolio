@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kowshik - Developer Portfolio </title>
+
+
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #00172B;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 70px;
+            background-color: rgb(62, 62, 166);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(149, 212, 238);
+            font-weight: bold;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 140px 0;
+        }
+
+        .firstsection div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        #element {
+            color: #0083B8;
+        }
+
+
+
+    .git{
+    margin-right: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 5px;
+   }
+   .linkdin{
+    margin-right: 20px; box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin-left: 30px;
+    padding: 5px;
+   }
+   .logos{
+    display: flex;
+    margin-top: 30px;
+   }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kowshik Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="/">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <p class="small">Hello, I'm Kowshik, and I'm deeply passionate about</p>
+                <span id="element"></span>
+
+                <div class="logos">
+                    <a href="https://github.com/07Karthik" target="_blank">
+                        <img class="git" src="github-logo.png" alt="GitHub Logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/sai-karthik-2ba106297/" target="_blank">
+                        <img class="linkdin" src="LinkedIn-Logo.png"  alt="LinkedIn Logo">
+                    </a>
+                </div>
+                
+                
+            </div>
+            <div class="rightsection">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+
+
+                <dotlottie-player class="logo"
+                    src="https://lottie.host/1a7a4d6a-f356-462c-a06e-98ff2f4309c1/sjJkAWo47E.json"
+                    background="transparent" speed="1" style="width: 450px; height: 450px;" loop
+                    autoplay></dotlottie-player>
+
+                    <script>
+                        function adjustLogo() {
+                          const logoElement = document.querySelector('.logo');
+                          if (window.innerWidth <= 600) {
+                            logoElement.style.width = '200px'; // Adjust the desired width for screens <= 400px
+                            // You can also adjust the positioning here if needed
+                          } else if (window.innerWidth <= 1000) {
+                            logoElement.style.width = '300px'; // Adjust the desired width for screens <= 768px
+                            // You can also adjust the positioning here if needed
+                          } else {
+                            logoElement.style.width = '450px'; // Reset the width for larger screens
+                          }
+                        }
+                      
+                        window.addEventListener('resize', adjustLogo);
+                        adjustLogo();
+                      </script>
+
+            </div>
+
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Development', 'Data Science'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+@media  screen and (max-width:1000px) {
+    nav{
+        flex-direction: column;
+    }
+
+}
+
+@media  screen and (max-width:660px) {
+    .leftsection .small{
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+}
+
+
+@media  screen and (max-width:586px) {
+    .right ul li{
+        margin: 0 10px;
+    }
+
+}
+
+@media  screen and (max-width:435px) {
+    .right ul li{
+        margin: 0 5px;
+    }
+
+}
